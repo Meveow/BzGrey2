@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BzGrey</string>
+    <string name="patient_info">Patient Info</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="call">Call</string>
+    <string name="calendar">Calendar</string>
+    <string name="greetings">Good morning, what would you like to do?</string>
+    <string name="home">Home</string>
+    <string name="jake_care">Jake\'s Care</string>
+    <string name="temp">36.8</string>
+    <string name="temp2">Temp</string>
+    <string name="hr">75</string>
+    <string name="hr2">HR</string>
+    <string name="bp">146/73</string>
+    <string name="bp2">BP</string>
+</resources>

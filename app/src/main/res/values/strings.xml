@@ -18,4 +18,9 @@
     <string name="weight">WEIGHT</string>
     <string name="height">HEIGHT</string>
     <string name="jake_matthew_anderson">Jake Matthew Anderson</string>
+    <string name="drug_allergy">DRUG ALLERGY</string>
+    <string name="empty">-</string>
+    <string name="age_input">75 years old</string>
+    <string name="height_input">174cm</string>
+    <string name="weight_input">78kg</string>
 </resources>

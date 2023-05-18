@@ -48,13 +48,14 @@
         android:id="@+id/hrContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="131dp"
         android:layout_marginEnd="380dp"
         android:background="@drawable/container_border"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="156dp">
+        app:layout_constraintTop_toTopOf="@+id/name">
 
         <TextView
             android:id="@+id/hr_text2"
@@ -102,11 +103,12 @@
         android:id="@+id/bpContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="131dp"
         android:layout_marginEnd="524dp"
-        android:orientation="vertical"
         android:background="@drawable/container_border"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="156dp">
+        app:layout_constraintTop_toTopOf="@+id/name">
 
         <TextView
             android:id="@+id/bp_text2"
@@ -140,16 +142,18 @@
         android:id="@+id/drugContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="128dp"
         android:background="@drawable/container_border"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="826dp"
-        tools:layout_editor_absoluteY="156dp">
+        app:layout_constraintStart_toEndOf="@+id/bpContainer"
+        app:layout_constraintTop_toTopOf="@+id/name">
 
         <TextView
             android:id="@+id/drug_text2"
             android:layout_width="343dp"
             android:layout_height="wrap_content"
-            android:text="DRUG ALLERGY"
+            android:text="@string/drug_allergy"
             android:textAlignment="center"
             android:textColor="@color/red"
             android:textSize="45sp" />
@@ -165,7 +169,7 @@
             android:id="@+id/drug_text"
             android:layout_width="match_parent"
             android:layout_height="57dp"
-            android:text="-"
+            android:text="@string/empty"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="60sp" />
@@ -187,9 +191,11 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="472dp"
-        tools:layout_editor_absoluteY="470dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drugContainer">
 
         <TextView
             android:id="@+id/full_name2"
@@ -205,7 +211,7 @@
             android:id="@+id/age2"
             android:layout_width="293dp"
             android:layout_height="66dp"
-            android:text="75 years old"
+            android:text="@string/age_input"
             android:textColor="@color/black"
             android:textSize="50sp"
             tools:layout_editor_absoluteX="471dp"
@@ -215,7 +221,7 @@
             android:id="@+id/height2"
             android:layout_width="293dp"
             android:layout_height="66dp"
-            android:text="174cm"
+            android:text="@string/height_input"
             android:textColor="@color/black"
             android:textSize="50sp"
             tools:layout_editor_absoluteX="471dp"
@@ -225,7 +231,7 @@
             android:id="@+id/weight2"
             android:layout_width="match_parent"
             android:layout_height="66dp"
-            android:text="78kg"
+            android:text="@string/weight_input"
             android:textColor="@color/black"
             android:textSize="50sp"
             tools:layout_editor_absoluteX="471dp"
@@ -236,28 +242,30 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="52dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="470dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempContainer">
 
         <TextView
             android:id="@+id/full_name"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:text="@string/full_name"
-            android:textColor="@color/blue"
             android:textAlignment="center"
+            android:textColor="@color/blue"
             android:textSize="50sp"
             tools:layout_editor_absoluteX="124dp"
             tools:layout_editor_absoluteY="470dp" />
 
         <TextView
             android:id="@+id/age"
-            android:layout_width="348dp"
+            android:layout_width="match_parent"
             android:layout_height="66dp"
             android:text="@string/age"
-            android:textColor="@color/blue"
             android:textAlignment="center"
+            android:textColor="@color/blue"
             android:textSize="50sp"
             tools:layout_editor_absoluteX="124dp"
             tools:layout_editor_absoluteY="536dp" />
@@ -267,8 +275,8 @@
             android:layout_width="348dp"
             android:layout_height="66dp"
             android:text="@string/height"
-            android:textColor="@color/blue"
             android:textAlignment="center"
+            android:textColor="@color/blue"
             android:textSize="50sp"
             tools:layout_editor_absoluteX="124dp"
             tools:layout_editor_absoluteY="602dp" />
@@ -278,8 +286,8 @@
             android:layout_width="349dp"
             android:layout_height="66dp"
             android:text="@string/weight"
-            android:textColor="@color/blue"
             android:textAlignment="center"
+            android:textColor="@color/blue"
             android:textSize="50sp"
             tools:layout_editor_absoluteX="124dp"
             tools:layout_editor_absoluteY="668dp" />

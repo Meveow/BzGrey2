@@ -4,4 +4,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gold">#b58d4a</color>
+    <color name="red">#e61921</color>
 </resources>

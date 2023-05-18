@@ -6,112 +6,82 @@
     android:layout_height="match_parent"
     tools:context=".PatientInfo">
 
-    <ImageView
-        android:id="@+id/temp"
-        android:layout_width="164dp"
-        android:layout_height="152dp"
-        android:src="@drawable/temp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/hr"
-        app:layout_constraintHorizontal_bias="0.181"
+    <LinearLayout
+        android:id="@+id/tempContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/container_border"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327"
-        tools:ignore="ContentDescription" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/temp_text"
+        <TextView
+            android:id="@+id/temp_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/temp2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:src="@drawable/temp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/temp_text"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="@string/temp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hrContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="212dp"
-        android:text="@string/temp"
-        android:textColor="@color/black"
-        android:textSize="60sp"
-        app:layout_constraintEnd_toStartOf="@+id/hr"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
-
-    <TextView
-        android:id="@+id/temp_text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/temp2"
-        android:textColor="@color/black"
-        android:textSize="60sp"
-        app:layout_constraintStart_toEndOf="@+id/temp"
-        app:layout_constraintTop_toBottomOf="@+id/temp_text" />
-
-    <ImageView
-        android:id="@+id/hr"
-        android:layout_width="136dp"
-        android:layout_height="140dp"
-        android:layout_marginEnd="180dp"
-        android:src="@drawable/hr"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321"
-        tools:ignore="ContentDescription" />
-
-    <TextView
-        android:id="@+id/hr_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="94dp"
-        android:text="@string/hr"
-        android:textColor="@color/black"
-        android:textSize="60sp"
-        app:layout_constraintEnd_toStartOf="@+id/bp"
-        app:layout_constraintStart_toEndOf="@+id/hr"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
-
-    <TextView
-        android:id="@+id/hr_text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:text="@string/hr2"
-        android:textColor="@color/black"
-        android:textSize="60sp"
-        app:layout_constraintStart_toEndOf="@+id/hr"
-        app:layout_constraintTop_toBottomOf="@+id/hr_text" />
-
-    <ImageView
-        android:id="@+id/bp"
-        android:layout_width="264dp"
-        android:layout_height="242dp"
-        android:layout_marginEnd="216dp"
-        android:src="@drawable/bp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="380dp"
+        android:background="@drawable/container_border"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.281"
-        tools:ignore="ContentDescription" />
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="156dp">
 
+        <TextView
+            android:id="@+id/hr_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hr2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
 
-    <TextView
-        android:id="@+id/bp_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="332dp"
-        android:layout_marginTop="52dp"
-        android:text="@string/bp"
-        android:textColor="@color/black"
-        android:textSize="60sp"
-        app:layout_constraintStart_toEndOf="@+id/hr_text"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        <ImageView
+            android:id="@+id/hr"
+            android:layout_width="154dp"
+            android:layout_height="140dp"
+            android:src="@drawable/hr"
+            tools:ignore="ContentDescription" />
 
-    <TextView
-        android:id="@+id/bp_text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bp2"
-        android:textColor="@color/black"
-        android:textSize="60sp"
-        app:layout_constraintStart_toEndOf="@+id/bp"
-        app:layout_constraintTop_toBottomOf="@+id/bp_text" />
+        <TextView
+            android:id="@+id/hr_text"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hr"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/name"
@@ -125,8 +95,82 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.065"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.036"
+        tools:layout_editor_absoluteX="9dp" />
+
+    <LinearLayout
+        android:id="@+id/bpContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="524dp"
+        android:orientation="vertical"
+        android:background="@drawable/container_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="156dp">
+
+        <TextView
+            android:id="@+id/bp_text2"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bp2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/bp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/bp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/bp_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/drugContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/container_border"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="826dp"
+        tools:layout_editor_absoluteY="156dp">
+
+        <TextView
+            android:id="@+id/drug_text2"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:text="DRUG ALLERGY"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/drug"
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:src="@drawable/drug"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/drug_text"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="60sp" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/home"
@@ -140,6 +184,107 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="472dp"
+        tools:layout_editor_absoluteY="470dp">
+
+        <TextView
+            android:id="@+id/full_name2"
+            android:layout_width="705dp"
+            android:layout_height="66dp"
+            android:text="@string/jake_matthew_anderson"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="471dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <TextView
+            android:id="@+id/age2"
+            android:layout_width="293dp"
+            android:layout_height="66dp"
+            android:text="75 years old"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="471dp"
+            tools:layout_editor_absoluteY="536dp" />
+
+        <TextView
+            android:id="@+id/height2"
+            android:layout_width="293dp"
+            android:layout_height="66dp"
+            android:text="174cm"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="471dp"
+            tools:layout_editor_absoluteY="602dp" />
+
+        <TextView
+            android:id="@+id/weight2"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="78kg"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="471dp"
+            tools:layout_editor_absoluteY="668dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="470dp">
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="@string/full_name"
+            android:textColor="@color/blue"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="348dp"
+            android:layout_height="66dp"
+            android:text="@string/age"
+            android:textColor="@color/blue"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="536dp" />
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="348dp"
+            android:layout_height="66dp"
+            android:text="@string/height"
+            android:textColor="@color/blue"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="602dp" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="349dp"
+            android:layout_height="66dp"
+            android:text="@string/weight"
+            android:textColor="@color/blue"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="668dp" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

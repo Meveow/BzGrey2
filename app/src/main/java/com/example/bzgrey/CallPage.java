@@ -7,19 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class PatientInfo extends AppCompatActivity {
+public class CallPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_patient_info);
+        setContentView(R.layout.activity_call_page);
 
         Button homeButton = findViewById(R.id.home);
 
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PatientInfo.this, MainActivity.class);
+                Intent intent = new Intent(CallPage.this, MainActivity.class);
                 startActivity(intent);
             }
         });

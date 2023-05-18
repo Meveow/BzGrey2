@@ -13,4 +13,9 @@
     <string name="hr2">HR</string>
     <string name="bp">146/73</string>
     <string name="bp2">BP</string>
+    <string name="age">AGE</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="weight">WEIGHT</string>
+    <string name="height">HEIGHT</string>
+    <string name="jake_matthew_anderson">Jake Matthew Anderson</string>
 </resources>

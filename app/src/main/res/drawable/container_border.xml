@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#FFFFFF" />  <!-- Background color of the container -->
+            <stroke
+                android:color="#4a72b5"
+                android:width="2dp" />  <!-- Border color and width of the container -->
+            <corners android:radius="8dp" />  <!-- Optional: Rounded corners of the container -->
+        </shape>
+    </item>
+</selector>

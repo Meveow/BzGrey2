@@ -13,6 +13,27 @@
         android:theme="@style/Theme.BzGrey"
         tools:targetApi="31">
         <activity
+            android:name=".CallPage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".EntertainmentPage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CalenderPage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".PatientInfo"
             android:exported="false">
             <meta-data

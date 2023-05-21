@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarPage">
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="195dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/gold"
+        android:text="@string/home"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="1143dp"
+        android:layout_height="323dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="529dp"
+        android:layout_height="372dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852">
+
+        <TextView
+            android:id="@+id/eightam_task"
+            android:layout_width="523dp"
+            android:layout_height="114dp"
+            android:gravity="center"
+            android:text="Take medicine"
+            android:textColor="@color/blue"
+            android:textSize="50sp"
+            android:background="#4080FF00" />
+
+        <TextView
+            android:id="@+id/twopm_task"
+            android:layout_width="523dp"
+            android:layout_height="121dp"
+            android:gravity="center"
+            android:text="Prep for surgery"
+            android:textColor="@color/blue"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/sixpm_task"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:background="@drawable/text_view_border"
+            android:gravity="center"
+            android:text="Surgery starts"
+            android:textColor="@color/blue"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="182dp"
+        android:layout_height="376dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86">
+
+        <TextView
+            android:id="@+id/eightam"
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:gravity="center"
+            android:text="8:00"
+            android:textColor="@color/gold"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/twopm"
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:gravity="center"
+            android:text="14:00"
+            android:textColor="@color/gold"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/sixpm"
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:gravity="center"
+            android:text="18:00"
+            android:textColor="@color/gold"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

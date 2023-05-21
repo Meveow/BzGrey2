@@ -227,6 +227,7 @@
                 android:text="@string/weight_input"
                 android:textColor="@color/black"
                 android:textSize="50sp"
+
                 tools:layout_editor_absoluteX="471dp"
                 tools:layout_editor_absoluteY="668dp" />
 

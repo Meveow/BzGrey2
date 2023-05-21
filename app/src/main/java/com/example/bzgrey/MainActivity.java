@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         entertainmentPageButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, EntertainmentPage.class);
+            Intent intent = new Intent(MainActivity.this, EntertainmentNewsPage.class);
             startActivity(intent);
         });
         callPageButton.setOnClickListener(v -> {

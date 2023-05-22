@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MoviesActivity extends AppCompatActivity {
 
@@ -39,5 +41,23 @@ public class MoviesActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView movies1 = findViewById(R.id.movies1);
+        ImageView movies2 = findViewById(R.id.movies2);
+
+        movies1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MoviesActivity.this, "Playing movie...", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        movies2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MoviesActivity.this, "Playing movie...", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 }

@@ -53,7 +53,7 @@
         <LinearLayout
             android:id="@+id/news_container1"
             android:layout_width="1028dp"
-            android:layout_height="557dp"
+            android:layout_height="520dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -63,14 +63,16 @@
 
             <ImageView
                 android:id="@+id/news1"
-                android:layout_width="497dp"
-                android:layout_height="544dp"
+                android:layout_width="515dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="20sp"
                 android:src="@drawable/news1" />
 
             <ImageView
                 android:id="@+id/news2"
-                android:layout_width="497dp"
-                android:layout_height="544dp"
+                android:layout_width="509dp"
+                android:layout_height="509dp"
+                android:paddingStart="20sp"
                 android:src="@drawable/news2" />
         </LinearLayout>
 
@@ -87,24 +89,25 @@
                 android:id="@+id/news3"
                 android:layout_width="497dp"
                 android:layout_height="544dp"
+                android:paddingEnd="20sp"
                 android:src="@drawable/news3" />
 
             <ImageView
                 android:id="@+id/news4"
-                android:layout_width="475dp"
-                android:layout_height="522dp"
+                android:layout_width="527dp"
+                android:layout_height="544dp"
+                android:paddingStart="20sp"
                 android:src="@drawable/news4" />
         </LinearLayout>
 
         <Button
             android:id="@+id/home"
-            android:layout_width="195dp"
-            android:layout_height="91dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_width="147dp"
+            android:layout_height="74dp"
             android:backgroundTint="@color/gold"
+            android:elevation="5dp"
             android:text="@string/home"
-            android:textSize="40sp"
+            android:textSize="35sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 

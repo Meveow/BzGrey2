@@ -1,59 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MoviesActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/movies_text"
-        android:layout_width="226dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="48dp"
-        android:text="@string/movies"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="60sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2B2B30"
+        tools:context=".MoviesActivity">
+
+        <TextView
+            android:id="@+id/movies_text"
+            android:layout_width="226dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/movies"
+            android:textAlignment="center"
+            android:textColor="@color/gold"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/music_button"
-        android:layout_width="193dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="60dp"
-        android:text="music"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.239"
-        app:layout_constraintStart_toEndOf="@+id/movies_text"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/music_button"
+            android:layout_width="193dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="60dp"
+            android:text="music"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.239"
+            app:layout_constraintStart_toEndOf="@+id/movies_text"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/news_button"
-        android:layout_width="193dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="60dp"
-        android:text="@string/news"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/movies_text"
-        app:layout_constraintHorizontal_bias="0.751"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/news_button"
+            android:layout_width="193dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/news"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@+id/movies_text"
+            app:layout_constraintHorizontal_bias="0.751"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/home"
-        android:layout_width="195dp"
-        android:layout_height="91dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/gold"
-        android:text="@string/home"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <Button
+            android:id="@+id/home"
+            android:layout_width="195dp"
+            android:layout_height="91dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/gold"
+            android:text="@string/home"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/movies1"
+            android:layout_width="989dp"
+            android:layout_height="391dp"
+            android:clickable="true"
+            android:onClick="onImageClick"
+            android:layout_marginTop="432dp"
+            android:src="@drawable/movies1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movies_text" />
+
+        <ImageView
+            android:id="@+id/movies2"
+            android:layout_width="989dp"
+            android:layout_height="394dp"
+            android:clickable="true"
+            android:onClick="onImageClick"
+            android:src="@drawable/movies2"
+            app:layout_constraintBottom_toTopOf="@+id/movies1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movies_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

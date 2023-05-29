@@ -35,6 +35,7 @@ Note: The app is intentionally kept simple, as the primary responsibility of pat
 # Prerequisites
 
 To run the BzGrey App locally, you need the following:
+- Either Windows or Mac as the operating system
 - Android Studio (version Dolphin | 2021.3.1 Patch)
 - Java Development Kit (JDK) 11.0.13
 

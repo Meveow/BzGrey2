@@ -45,3 +45,21 @@ To run the BzGrey App locally, you need the following:
 3. Open the extracted folder in Android Studio.
 4. Select the device manager to configure the emulator (eg. Pixel C or Nexus 10), and is set as landscape with auto-rotation enabled
 5. Run the MainActivity.java file to launch the app.
+
+# External Libraries
+
+The BzGrey app utilizes the following external libraries:
+1. androidx.appcompat: Provides support for the AppCompat theme, ensuring a consistent look and feel across different Android versions.
+2. android.content.Intent: Enables launching activities and navigating between different screens within the app.
+3. android.widget.Button: Provides the Button widget for creating clickable buttons in the app's user interface.
+4. android.widget.ImageView: Allows displaying images in the app's user interface.
+5. android.widget.Toast: Enables displaying short-duration messages (toasts) on the screen when certain actions are performed.
+6. android.Manifest and android.content.pm.PackageManager: Used for handling runtime permissions, specifically for making phone calls in the CallPage class.
+
+Note: These libraries are part of the Android SDK and commonly used in Android app development.
+
+# Contributors
+
+- Honey Zin
+- Evelyn Soong
+- Lea Annie Bonet
